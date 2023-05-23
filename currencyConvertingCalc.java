@@ -435,7 +435,7 @@ public class currencyConvertingCalc {
 
 	private static void sendHttpGETRequest(String fromCurrency, String toCurrency, double amount) {
 		try {
-			URL url = new URL("https://v6.exchangerate-api.com/v6/86a566b01cdba8ad99ed6237/pair/" + fromCurrency + "/"
+			URL url = new URL("https://v6.exchangerate-api.com/v6/YOUR_API_KEY/pair/" + fromCurrency + "/"
 					+ toCurrency + "/" + amount);
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 			conn.setRequestMethod("GET");
